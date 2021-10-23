@@ -12,30 +12,7 @@ function App() {
 // eslint-disable-next-line 
   const [showaddtask,setshowaddtask]= useState(true)
 
-  const [tasks,setTasks] = useState([
-    {
-
-    id:1,
-    text:'Doctor appointment',
-    day:'feb 5th' ,
-    reminder: true
-   },
-   {
-    id:2,
-    text:'football match',
-    day:'feb 6th' ,
-    reminder: true
-
-   },
-   {
-    id:3,
-    text:'meeting appointment',
-    day:'feb 5th' ,
-    reminder: false
-   }
-
-
-])
+  const [tasks,setTasks] = useState()
 // addtask
 const addtask = (task) => {
   const id = Math.floor(Math.random() * 10000 )+ 1 
